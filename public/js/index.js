@@ -199,7 +199,7 @@ function separadorDeAPares() //[3,5] [+]
     let resultado = 0
     for (let i = 0; i < arrayOperandosv2.length-1; i++) {
         for (let j = 0; j < arrayOperadores.length; j++) {
-            resultado = calculadora((i==0) ? conversorAEntero(arrayOperandosv2[i]): resultado, conversorAEntero((i==(arrayOperandosv2.length-1))?arrayOperandosv2[arrayOperandosv2.length-1]:(arrayOperandosv2[i])), arrayOperadores[j])
+            resultado = calculadora((i==0) ? conversorAEntero(arrayOperandosv2[i]): resultado, conversorAEntero((i==(arrayOperandosv2.length-1))?arrayOperandosv2[arrayOperandosv2.length-1]:(arrayOperandosv2[i+1])), arrayOperadores[j])
            // arrayOperandosv2.length % 2 == 0 ? i+=2 : 
             if(arrayOperandosv2.length % 2 == 0)
             {
